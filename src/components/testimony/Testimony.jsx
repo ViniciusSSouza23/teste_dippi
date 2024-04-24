@@ -36,7 +36,7 @@ function Testimony() {
         <div>
           <div className="d-flex justify-content-between pt-5 mt-lg-5">
             {testimonials.map((item) => (
-              <CardTestimony key={item.id} data={item} />
+              <CardTestimony key={item.name} data={item} />
             ))}
           </div>
         </div>

@@ -1,0 +1,23 @@
+.inputText {
+  border: 1px solid #d8d6de;
+  border-radius: 5px;
+  padding-block: 6px;
+  padding-inline: 6px;
+  width: 100%;
+}
+
+.inputText::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.inputText:focus {
+  outline: 1px solid #7d45dc;
+}
+
+.btnHidden {
+  position: absolute !important;
+  right: 4px;
+}
