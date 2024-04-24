@@ -28,8 +28,8 @@ function Testimony() {
     <section id="depoimentos">
       <div className="container py-5">
         <div className="text-center">
-          <h1 className="display-4 mb-3 color-testimonals">Depoimentos</h1>
-          <h6 className="text-18px color-testimonals">
+          <h1 className="display-4 mb-3 color-base">Depoimentos</h1>
+          <h6 className="text-18px color-base">
             O suporte ao cliente é nossa primeira prioridade.
           </h6>
         </div>
