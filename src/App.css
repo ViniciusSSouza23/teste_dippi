@@ -25,3 +25,13 @@
   font-size: 18px;
   line-height: 31.9px;
 }
+
+.text-14px {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.color-testimonals {
+  color: #5e5873;
+}

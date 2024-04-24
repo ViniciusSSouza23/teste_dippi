@@ -1,0 +1,22 @@
+.customCard {
+  background: #fafafa;
+  border-radius: 8px;
+  max-width: 352px;
+  padding-inline: 36px;
+}
+
+.header {
+  margin-top: -50px;
+  margin-bottom: 32px;
+}
+
+.body {
+  color: #5e5873;
+}
+.mulishFont {
+  font-family: "Mulish" !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.57px;
+  /* color: #5e5873; */
+}
