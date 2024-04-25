@@ -4,6 +4,11 @@
   padding-block: 6px;
   padding-inline: 6px;
   width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #b9b9c3;
 }
 
 .inputText::placeholder {
@@ -11,6 +16,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  color: #b9b9c3;
 }
 
 .inputText:focus {
@@ -20,4 +26,46 @@
 .btnHidden {
   position: absolute !important;
   right: 4px;
+}
+
+.select {
+  border: 1px solid #d8d6de;
+  border-radius: 5px;
+  padding-block: 6px;
+  padding-inline: 6px;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none; /* Para o Safari */
+  -moz-appearance: none; /* Para o Firefox */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #b9b9c3;
+}
+.select:focus {
+  outline: 1px solid #7d45dc;
+}
+
+.select option {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #b9b9c3;
+}
+.select option:checked {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #b9b9c3;
+}
+
+.iconSelect {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
