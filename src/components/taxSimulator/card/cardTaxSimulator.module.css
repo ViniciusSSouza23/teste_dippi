@@ -1,0 +1,7 @@
+.customCardContainer {
+  background: #f8f8f8;
+  box-shadow: 5px 5px 15px 0px #00000026;
+  width: 100%;
+  padding: 48px;
+  border-radius: 16px;
+}

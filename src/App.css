@@ -64,3 +64,25 @@
   min-width: 141px;
   min-height: 38px;
 }
+
+.slick-list {
+  overflow: visible;
+}
+.slick-next,
+.slick-prev {
+  z-index: 99999;
+}
+
+.slick-next::before {
+  display: none !important;
+}
+
+.slick-prev::before {
+  display: none !important;
+}
+.heading-1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34.13px;
+  text-align: left;
+}

@@ -1,0 +1,10 @@
+.taxContainer {
+  background: #e9ecef;
+  position: relative;
+  overflow: hidden;
+}
+
+.svgPosition {
+  position: absolute;
+  right: 0;
+}
