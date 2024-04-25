@@ -1,0 +1,31 @@
+.customCardContainer {
+  position: relative;
+  width: 980px;
+  height: 541px;
+  overflow: visible;
+}
+
+.customCard {
+  background: #f8f8f8;
+  box-shadow: 5px 5px 15px 0px #00000026;
+  margin-inline: 48px;
+  border-radius: 16px;
+  width: 919px;
+  height: 475px;
+}
+
+.image {
+  position: absolute;
+  right: 14px;
+  top: -40px;
+  z-index: 1;
+  height: 545px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31.9px;
+  text-align: left;
+  color: #7367f0;
+}

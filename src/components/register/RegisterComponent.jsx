@@ -46,8 +46,8 @@ function RegisterComponent() {
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-6">
-            <h1 className="display-4 color-testimonals ">Crie sua conta</h1>
-            <h6 className="color-testimonals text-18px">
+            <h1 className="display-4 color-base ">Crie sua conta</h1>
+            <h6 className="color-base text-18px">
               Preencha o formulário ao lado para cadastrar-se no mpays.
             </h6>
           </div>
@@ -64,6 +64,7 @@ function RegisterComponent() {
             <FormGroup
               handleChange={handleChangeElement}
               value={payload.email}
+              error={error.email}
               id={"email"}
               placeholder={"E-mail"}
               label={"E-mail*"}
@@ -72,6 +73,7 @@ function RegisterComponent() {
             <FormGroup
               handleChange={handleChangeElement}
               value={payload.phone}
+              error={error.phone}
               id={"phone"}
               placeholder={"Telefone"}
               label={"Telefone*"}
@@ -80,6 +82,7 @@ function RegisterComponent() {
             <FormGroup
               handleChange={handleChangeElement}
               value={payload.password}
+              error={error.password}
               id={"password"}
               label={"Senha*"}
               type={"password"}
