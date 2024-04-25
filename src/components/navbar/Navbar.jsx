@@ -8,7 +8,7 @@ function Navbar() {
         <img src={logo} alt="Logo mpays" className="img-fluid" width={151.55} />
       </div>
       <div className="d-flex align-items-center">
-        <a href="#soluções" className="links-navbar hover-class">
+        <a href="#solucoes" className="links-navbar hover-class">
           Soluções
         </a>
         <a href="#tarifas" className="links-navbar mx-5 hover-class">
