@@ -1,19 +1,24 @@
 import FormGroup from "../FormGroup/FormGroup";
 import { useState } from "react";
+import Modal from "react-modal";
+import RegisterModal from "../modals/registerModal/registerModal";
 
+const defaultData = {
+  name: "",
+  email: "",
+  phone: "",
+  password: "",
+};
 function RegisterComponent() {
-  const [payload, setPayload] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    password: "",
-  });
+  const [payload, setPayload] = useState(defaultData);
   const [error, setError] = useState({
     name: false,
     email: false,
     phone: false,
     password: false,
   });
+  const [openModal, setOpenModal] = useState(false);
+
   function handleChangeElement(id, e) {
     let _payload = { ...payload };
     let _error = { ...error };
@@ -39,10 +44,39 @@ function RegisterComponent() {
       _error[errorKey] = true;
       setError(_error);
       return;
+    } else {
+      setOpenModal(true);
+      setPayload(defaultData);
     }
+  }
+
+  function handleModal() {
+    setOpenModal(!openModal);
   }
   return (
     <section id="cadastro">
+      <Modal
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+          },
+          content: {
+            width: "720px", // Defina a largura do modal conforme necessário
+            height: "490px", // Defina a altura do modal conforme necessário
+            margin: "auto", // Centralize o modal na tela
+            border: "1px solid #ccc",
+            borderRadius: "20px",
+            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+            zIndex: 999999,
+            background: "#fbfbfb",
+            padding: 0,
+          },
+        }}
+        isOpen={openModal}
+        onRequestClose={handleModal}
+      >
+        <RegisterModal handleClose={handleModal} />
+      </Modal>
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-6">

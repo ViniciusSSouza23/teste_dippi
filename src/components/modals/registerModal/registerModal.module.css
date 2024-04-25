@@ -1,0 +1,12 @@
+.registerModalContainer {
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.image {
+  position: absolute;
+  bottom: -15px;
+}
